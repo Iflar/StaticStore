@@ -34,11 +34,57 @@ html, body{
     flex: 1;
     height: 100%;
     width: 100%;
-    background-color: tomato;
+    padding: 10px;
 }
 
 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     flex: 3;
     height: 100%;
     width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.consoles {
+    width: 50%;
+}
+
+.content-items {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.content-item {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in;
+}
+
+.content-item:hover {
+    /* background-color: red; */
+    border: 1px solid black;
+}
+
+.content-item > img {
+    height: 175px;
+    object-fit: contain;
+}
+
+.content-item > p {
+    margin: 0;
 }

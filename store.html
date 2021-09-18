@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="store.css">
     <title>Store Page</title>
 </head>
+
 <body>
     <div class="header"></div>
     <div class="main">
-        <div class="sidebar light-bg"></div>
-        <div class="content light-bg"></div>
+        <div class="sidebar">
+            <div class="content-box">
+                <p>About</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-box">
+                <p>Games</p>
+                <div class="content-items">
+                    <a class="content-item" href="https://en.wikipedia.org/wiki/Halo:_Combat_Evolved" target="_blank">
+                        <p>Halo: Combat Evolved</p>
+                        <img
+                            class="content-item-image"
+                            src="./assets/halo_1.jpg"
+                            alt="halo combat evolved">
+                    </a>
+
+                    <a class="content-item" href="https://en.wikipedia.org/wiki/Halo_2" target="_blank">
+                        <p>Halo 2</p>
+                        <img
+                            class="content-item-image"
+                            src="./assets/halo_2.png"
+                            alt="halo 2">
+                    </a>
+                </div>
+            </div>
+            <div class="consoles content-box">
+                <p>Consoles</p>
+                <!-- maybe add carousel for consoles like: https://css-tricks.com/css-only-carousel/ -->
+            </div>
+            <div class="content-box">
+                <p>Books</p>
+            </div>
+        </div>
     </div>
-    <div class="footer"></div>
+    <!-- <div class="footer"></div> -->
 </body>
+
 </html>
