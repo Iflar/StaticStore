@@ -8,24 +8,32 @@
 }
 
 .stretch {
+    
     width:100%;
     height:100%;
 }
-h1{
-    color: blanchedalmond;
+
+.head{
+    color: blue;
+    background-color: white;
 }
 
 .main{
-    position: relative;
+    position: absolute;
     text-align: center;
+    background-color: saddlebrown;
 }
 
 .sidebar{
     position: relative;
     text-align: center;
+    width: 150px;
+    height: 500px;
+    background-color: burlywood;
 }
 
 .foot{
+    color: white;
     position: absolute;
     bottom: 0%;
 }
