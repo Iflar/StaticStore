@@ -3,7 +3,8 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: lavender;
+    background-image: url('./assets/halo.jpg');
+    background-size: cover;
 }
 
 .header{
@@ -14,7 +15,6 @@ html, body{
 
 .main{
     display: flex;
-    background-color: cadetblue;
     width: 100%;
     height: calc(100% - 70px);
 }
@@ -25,16 +25,20 @@ html, body{
     height: 30px;
 }
 
+.light-bg {
+    background-color: white;
+    opacity: 0.5;
+}
+
 .sidebar{
     flex: 1;
-    background-color: indigo;
     height: 100%;
     width: 100%;
+    background-color: tomato;
 }
 
 .content{
     flex: 3;
-    background-color: teal;
     height: 100%;
     width: 100%;
 }
