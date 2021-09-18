@@ -6,35 +6,56 @@
     top: 0px; 
     z-index: -1;
 }
-
 .stretch {
     
     width:100%;
     height:100%;
 }
 
+.container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: inherit;
+}
+
 .head{
+    margin: 0%;
+    position: fixed;
+    top: 0%;
+    order: 1;
+    flex: 1;
+    text-align: center;
     color: blue;
     background-color: white;
 }
 
 .main{
-    position: absolute;
+    margin: 0%;
+    position: relative;
+    order: 2;
+    flex: 1;
     text-align: center;
     background-color: saddlebrown;
 }
 
 .sidebar{
-    position: relative;
-    text-align: center;
-    width: 150px;
-    height: 500px;
+    margin: 0%;
+    width: 20%;
+    align-self: flex-start;
+    order: 3;
+    flex-basis: 20%;
+    text-align: center;;
     background-color: burlywood;
 }
 
 .foot{
-    color: white;
     position: absolute;
     bottom: 0%;
+    order: 4;
+    flex: 1;
+    text-align: center;
+    background-color: teal;
+    color: white;
 }
 
