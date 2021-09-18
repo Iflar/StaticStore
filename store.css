@@ -1,61 +1,40 @@
-#background {
-    width: 100%; 
-    height: 100%; 
-    position: fixed; 
-    left: 0px; 
-    top: 0px; 
-    z-index: -1;
-}
-.stretch {
-    
-    width:100%;
-    height:100%;
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: lavender;
 }
 
-.container{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: inherit;
-}
-
-.head{
-    margin: 0%;
-    position: fixed;
-    top: 0%;
-    order: 1;
-    flex: 1;
-    text-align: center;
-    color: blue;
-    background-color: white;
+.header{
+    background-color: blue;
+    width: 100%;
+    height: 70px;
 }
 
 .main{
-    margin: 0%;
-    position: relative;
-    order: 2;
-    flex: 1;
-    text-align: center;
-    background-color: saddlebrown;
+    display: flex;
+    background-color: cadetblue;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.footer{
+    background-color: honeydew;
+    width: 100%;
+    height: 30px;
 }
 
 .sidebar{
-    margin: 0%;
-    width: 20%;
-    align-self: flex-start;
-    order: 3;
-    flex-basis: 20%;
-    text-align: center;;
-    background-color: burlywood;
-}
-
-.foot{
-    position: absolute;
-    bottom: 0%;
-    order: 4;
     flex: 1;
-    text-align: center;
-    background-color: teal;
-    color: white;
+    background-color: indigo;
+    height: 100%;
+    width: 100%;
 }
 
+.content{
+    flex: 3;
+    background-color: teal;
+    height: 100%;
+    width: 100%;
+}
