@@ -12,7 +12,7 @@ html, .body{
 .site-content{
     flex-direction: column;
     overflow: auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 50px; */
 }
 
 .header{
@@ -22,14 +22,32 @@ html, .body{
 }
 
 .head-content{
+    flex-direction: column;
     position: sticky;
     align-items: center;
     padding: 0;
     position: static;
-    background-color: blue;
+    background-color: rgba(0, 174, 255, 0.582);
     width: 100%;
     height: 70px;
 } 
+
+.head-links{
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 80%;
+    width: 170px;
+    height: 50px;
+    background-color: khaki;
+}
+
+
+.links-content {
+    display: flex;
+    gap: 10px;
+}
 
 .links-item img{
     object-fit: contain;
@@ -38,25 +56,38 @@ html, .body{
 }
 
 #icon-1:hover{
+    border-radius: 100%;
     background-color: red;
+    transition: all 0.4s ease-in-out;
 }
+.links-item .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .links-item:hover .tooltiptext{
+    visibility: visible;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
 
 #icon-2:hover{
+    border-radius: 100%;
     background-color: green;
+    transition: all 0.4s ease-in-out;
 }
 
 #icon-3:hover{
+    border-radius: 100%;
     background-color: magenta;
-}
-
-.head-links{
-    display: flex;
-    position: relative;
-    top: 10px;
-    left: 80%;
-    width: 160px;
-    height: 50px;
-    background-color: khaki;
+    transition: all 0.4s ease-in-out;
 }
 
 .main{
@@ -144,21 +175,33 @@ html, .body{
     bottom: 0;
     width: 100%;
     height: 50px;  
-    background-color: tan;
+    /* background-color: tan; */
  }
 
  .foot-sendy{
     display: flex;
     position: relative;
+    border-radius: 70px;
     top: 0px;
     left: 5%;
     width: 160px;
     height: 50px;
-    background-color: khaki;
+    background-color: rgba(0, 0, 128, 0.664);
 }
 
- .sendy-item img{
-    object-fit: contain;
-    height: 50px;
-    width: 50px;
+.sendy-content{
+    display: flex;
 }
+
+.sendy-item img{
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+}
+
+.sendy-item p{
+    color: lightsalmon;
+    font-size: 13px;
+}
+
+
