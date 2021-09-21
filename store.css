@@ -69,7 +69,6 @@ html, .body{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    background-color: black;
   }
   .links-item:hover .tooltiptext{
     visibility: visible;
@@ -77,6 +76,7 @@ html, .body{
     top: 100%;
     left: 50%;
     margin-left: -60px;
+    background-color: black;
   }
 
 #icon-2:hover{
