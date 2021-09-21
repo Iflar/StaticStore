@@ -69,6 +69,7 @@ html, .body{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
+    background-color: black;
   }
   .links-item:hover .tooltiptext{
     visibility: visible;
