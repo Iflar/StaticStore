@@ -1,4 +1,5 @@
-html, body{
+html, .body{
+    display: flex;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -8,46 +9,74 @@ html, body{
     background-size: cover;
 }
 
-.head-item{
-    padding: 5px;
-    text-align: right;
-    background-color: violet;
-    width: 20%;
-    height: 50%;
+.site-content{
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: 40px;
 }
 
 .header{
-    position: fixed;
+    left: 50%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+}
+
+.head-content{
+    position: relative;
+    align-items: center;
+    padding: 0;
+    position: static;
     background-color: blue;
     width: 100%;
     height: 70px;
+} 
+
+/* .links-content{
+    display: flex;
+}    */
+
+.links-item img{
+    object-fit: contain;
+    height: 50px;
+    width: 50px;
+}
+
+#icon-1:hover{
+    background-color: red;
+}
+
+#icon-2:hover{
+    background-color: green;
+}
+
+#icon-3:hover{
+    background-color: magenta;
+}
+
+.head-links{
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 80%;
+    width: 160px;
+    height: 50px;
+    background-color: khaki;
 }
 
 .main{
-    margin-top: 70px;
+    /* margin-top: 70px; */
     display: flex;
     width: 100%;
     height: calc(100% - 70px);
 }
 
-.footer{
-    background-color: honeydew;
-    width: 100%;
-    height: 30px;
-}
-
-.light-bg{
-    background-color: white;
-    opacity: 0.5;
-}
-
 .sidebar{
     flex: 1;
-    height: 100%;
+    height: 70%;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
+    overflow: auto;
+    margin-top: 10px;
 }
 
 .content{
@@ -58,14 +87,14 @@ html, body{
     height: 100%;
     width: 100%;
     padding: 10px;
-    overflow-x: hidden;
+    
 }
 
 .content-box{
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    overflow: hidden;
+    flex-grow: inherit;
 }
 
 .consoles{
@@ -77,6 +106,7 @@ html, body{
     overflow-x: auto;
     gap: 10px;
 }
+
 
 .content-item{
     border-radius: 5px;
@@ -95,10 +125,28 @@ html, body{
 }
 
 .content-item > img{
-    height: 175px;
+    height: 170px;
     object-fit: contain;
+}
+
+.console > img{
+    width: 120px;
+}
+
+.console:hover{
+    background-color: rgba(14, 30, 83, 0.233);
 }
 
 .content-item > p {
     margin: 0;
 }
+
+
+ .footer-content{
+    position: absolute;
+    overflow: auto;
+    bottom: 0;
+    width: 100%;
+    height: 40px;  
+    background-color: tan;
+ }
